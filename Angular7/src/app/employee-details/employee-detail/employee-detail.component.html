@@ -1,0 +1,55 @@
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+   <input type="hidden" name="ID" [value]="service.formData.ID">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-user-friends" [class.green-icon]="Name.valid" 
+                    [class.red-icon]="Name.invalid && Name.touched"></i>
+                </div>
+            </div>
+            <input name="Name" #Name="ngModel" [(ngModel)]="service.formData.Name" class="form-control" 
+            placeholder="Employee Name" required >
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-restroom" [class.green-icon]="Gender.valid" 
+                    [class.red-icon]="Gender.invalid && Gender.touched"></i>
+                </div>
+            </div>
+            <input name="Gender" #Gender="ngModel" [(ngModel)]="service.formData.Gender" 
+            class="form-control" placeholder="Gender" required >
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fad fa-university" [class.green-icon]="Department.valid" 
+                    [class.red-icon]="Department.invalid && Department.touched"></i>
+                </div>
+            </div>
+            <input name="Department" #Department="ngModel" [(ngModel)]="service.formData.Department" 
+            class="form-control" placeholder="Department Name" required >
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fad fa-city"  [class.green-icon]="City.valid" 
+                    [class.red-icon]="City.invalid && City.touched"></i>
+                </div>
+            </div>
+            <input name="City" #City="ngModel" [(ngModel)]="service.formData.City" 
+            class="form-control" placeholder="City Name" required >
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-success btn-lg btn-block" type="submit" [disabled]="form.invalid"><i class="fas fa-database"></i> Submit</button>
+    </div>
+</form>
