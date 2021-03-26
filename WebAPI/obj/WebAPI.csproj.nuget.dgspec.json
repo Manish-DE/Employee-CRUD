@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\manis\\source\\repos\\Restaurant\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\manis\\source\\repos\\Employee_CRUD_ADO\\Employee-CRUD\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\manis\\source\\repos\\Restaurant\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\manis\\source\\repos\\Employee_CRUD_ADO\\Employee-CRUD\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\manis\\source\\repos\\Restaurant\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\manis\\source\\repos\\Employee_CRUD_ADO\\Employee-CRUD\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\manis\\source\\repos\\Restaurant\\WebAPI\\WebAPI.csproj",
+        "projectPath": "C:\\Users\\manis\\source\\repos\\Employee_CRUD_ADO\\Employee-CRUD\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\manis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\manis\\source\\repos\\Restaurant\\WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\manis\\source\\repos\\Employee_CRUD_ADO\\Employee-CRUD\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\manis\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,6 +83,14 @@
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[3.0.3, 3.0.3]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -93,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
